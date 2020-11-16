@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <!--Alertify-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/alertify.min.js" integrity="sha512-JnjG+Wt53GspUQXQhc+c4j8SBERsgJAoHeehagKHlxQN+MtCCmFDghX9/AcbkkNRZptyZU4zC8utK59M5L45Iw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/alertify.js" integrity="sha512-eOUPKZXJTfgptSYQqVilRmxUNYm0XVHwcRHD4mdtCLWf/fC9XWe98IT8H1xzBkLL4Mo9GL0xWMSJtgS5te9rQA==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/css/alertify.css" integrity="sha512-MpdEaY2YQ3EokN6lCD6bnWMl5Gwk7RjBbpKLovlrH6X+DRokrPRAF3zQJl1hZUiLXfo2e9MrOt+udOnHCAmi5w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/css/alertify.min.css" integrity="sha512-IXuoq1aFd2wXs4NqGskwX2Vb+I8UJ+tGJEu/Dc0zwLNKeQ7CW3Sr6v0yU3z5OQWe3eScVIkER4J9L7byrgR/fA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/css/themes/bootstrap.css" integrity="sha512-eSjlj23qCNm7hmEQiXiJGCxLVT3weZ47TdIESCNFm8LwNDBtmRAbdDXwkKLLA5HPQIR1yl9JYO0wQG6gIPJoRQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/css/themes/bootstrap.min.css" integrity="sha512-6xVTeh6P+fsqDhF7t9sE9F6cljMrK+7eR7Qd+Py7PX5QEVVDLt/yZUgLO22CXUdd4dM+/S6fP0gJdX2aSzpkmg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/css/themes/default.css" integrity="sha512-n3strxW5pk6ucnNoNvLaSNhp/6zSTHDhlQLtIN99PSQ+HelfUDAcTF31egGfjdJJsyS3oZTNlDWa/2qeIYZwFQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/css/themes/default.min.css" integrity="sha512-RgUjDpwjEDzAb7nkShizCCJ+QTSLIiJO1ldtuxzs0UIBRH4QpOjUU9w47AF9ZlviqV/dOFGWF6o7l3lttEFb6g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/css/themes/semantic.css" integrity="sha512-Q3mBAOX+ATSYssowhFlEdFH4V+sTKUCqyw7SXnevGpVn2vuKK1O2oKtpce0ER4AKKm8bX4o/Q9CBV3K9wwozdQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/css/themes/semantic.min.css" integrity="sha512-wBsM8lZ8AwhPAssalijAYX/IheZFyWz7ILMyj6rsG1VUtzC0BD186cXO270S+gEzpYPMFeBA0ovFgzjDU9x54g==" crossorigin="anonymous" />
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <!--  INGRESAR SUCURSALES-->
+        <fieldset id="form" class="border p-2 mt-5">
+            <legend id="legend" class="w-auto">Ingresar Sucursal #1</legend>
+            <div class="input-group mt-4">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Nombre de la Sucursal</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre"
+                    aria-describedby="basic-addon1" id="nombre" name="nombre">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-6">
+                    <div class="input-group mt-4">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon2">Ganancias</span>
+                            <span class="input-group-text" id="basic-addon2">$</span>
+                        </div>
+                        <input type="number" class="form-control" value="1000.00" min="1000" placeholder="Ganancia"
+                            aria-label="Ganancia" aria-describedby="basic-addon2" id="ganancias" name="ganancias">
+                    </div>
+                </div>
+
+                <div class="form-group col-6">
+                    <div class="input-group mt-4">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">Numero de empleados</span>
+                        </div>
+                        <input type="number" class="form-control" min="10" value="10" placeholder="Empleados"
+                            aria-label="empleados" aria-describedby="basic-addon3" id="empleados" name="empleados">
+                    </div>
+                </div>
+            </div>
+            <div class="form-row mt-3">
+                <div class="col">
+                    <button type="submit" id="agregar" name="agregar"
+                        class="btn btn-primary btn-lg btn-block">Agregar</button>
+                </div>
+                <div class="col">
+                    <button type="submit" id="reset" name="reset"
+                        class="btn btn-warning btn-lg btn-block">Reset</button>
+                </div>
+            </div>
+
+        </fieldset>
+        <fieldset class="border p-2 mt-5">
+            <legend class="w-auto">Sucursales que obtienen ganancias entre $1,000 y $30,000 son:</legend>
+            <div class="row" id="bt">
+            </div>
+        </fieldset>
+        <fieldset class="border p-2 mt-5">
+            <legend class="w-auto">Sucursales que obtienen ganancias mayores de $30,000 son:</legend>
+            <div class="row" id="et">
+            </div>
+        </fieldset>
+
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
